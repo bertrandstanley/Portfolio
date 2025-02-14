@@ -5,7 +5,7 @@ const Resume = () => {
     <section id="resume">
       <h2>My Skills</h2>
 
-      <a href="/src/assets/Stanley Bertrand - Resume.pdf" download>
+      <a href="/Stanley Bertrand - Resume.pdf" download>
         CLICK HERE <br /> <span style={{ color: 'black' }}>to download my resume</span>
       </a>
       <div className="resume-container">

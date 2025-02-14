@@ -52,14 +52,14 @@ const Contact = () => {
           <div className="website-images">
             <div className="website-image">
               <a href="https://northmiamisoccer.org/" target="_blank" rel="noopener noreferrer">
-                <img src="/src/assets/NMSA Website.png" alt="North Miami Soccer Academy Website" width="1200px" height="1200px" />
+                <img src="/images/NMSA Website.png" alt="North Miami Soccer Academy Website" width="1200px" height="1200px" />
               </a>
             </div>
 
 
             <div className="website-image">
               <a href="https://fondationalfredbeliard.org/" target="_blank" rel="noopener noreferrer">
-                <img src="/src/assets/FAB Website.png" alt="Fondation Alfred Beliard Website" width="1200px" height="1200px" />
+                <img src="/images/FAB Website.png" alt="Fondation Alfred Beliard Website" width="1200px" height="1200px" />
               </a>
             </div>
           </div>
