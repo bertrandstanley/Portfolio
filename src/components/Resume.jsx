@@ -4,7 +4,10 @@ const Resume = () => {
   return (
     <section id="resume">
       <h2>My Skills</h2>
-      
+
+      <a href="/src/assets/Stanley Bertrand - Resume.pdf" download>
+        CLICK HERE <br /> <span style={{ color: 'black' }}>to download my resume</span>
+      </a>
       <div className="resume-container">
         
         <div className="resume-section">
@@ -25,7 +28,7 @@ const Resume = () => {
             UX/UI
           </p>
         </div>
-        
+
         <div className="resume-section">
           <h3>Front End</h3>
           <p>
@@ -47,7 +50,7 @@ const Resume = () => {
             RESTful APIs
           </p>
         </div>
-        
+
         <div className="resume-section">
           <h3>Music Production</h3>
           <p>
