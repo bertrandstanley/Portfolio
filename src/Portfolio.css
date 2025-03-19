@@ -28,7 +28,7 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     width: 100%;
-    height: 200px;
+    min-height: 200px;
     z-index: 1;
     box-sizing: border-box; /* Added for box sizing */
 }
@@ -76,13 +76,59 @@
     letter-spacing: 1px;
 }
 
+/* Styles for the buttons */
+.buttons {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 15px;
+    z-index: 3; /* Make sure the buttons are above the card image */
+    margin-top: 10px;
+}
+
+.button {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #000000; /* Green background by default */
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button:hover {
+    background-color: #17ae37; /* Darker green when hovered */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.button img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: opacity 1s ease;
+}
+
+.button:hover img {
+    opacity: 1;
+}
+
 @media (max-width: 768px) {
     .projects {
         grid-template-columns: 1fr;
-        gap: 20px;
+        gap: 20px;  
     }
 
     .project-card {
         height: 250px;
+    }
+}
+
+@supports (-webkit-appearance:none) {
+    /* Safari-specific fixes here */
+    .project-card {
+        height: 200px; /* adjust for Safari if needed */
     }
 }

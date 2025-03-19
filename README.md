@@ -7,6 +7,8 @@ This is my portfolio, where I showcase all my projects and skills, which will he
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
+- [Mock-Up](#mock-up)
+- [Deployed URL](#deployed-url)
 - [License](#license)
 - [Contributing](#contributing)
 - [Questions](#questions)
@@ -16,6 +18,20 @@ This is a deployed website that does not require any installation to be viewed.
 
 ## Usage
 Once you open the website, explore all the pages, view my projects in the portfolio, download my resume for more details, and feel free to contact me if needed.
+
+## Mock-Up
+
+The following images show my <span style="color: yellow;">**Portfolio**</span> UI.
+
+![alt text](<Screenshot 2025-03-17 at 10.27.51 AM.png>) 
+
+![alt text](<Screenshot 2025-03-17 at 10.28.16 AM.png>)
+
+![alt text](<Screenshot 2025-03-17 at 10.28.32 AM.png>) 
+
+## Deployed URL
+
+[Click Here](https://bertrandstanley.netlify.app/) to view my portfolio. 
 
 ## License
 

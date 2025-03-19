@@ -11,7 +11,7 @@ const AboutMe = () => {
 
           <h1>Stanley Bertrand</h1>
 
-          <h2>Digital Marketer | Software Developer | DJ | Music Producer</h2>
+          <h3>Digital Marketer | Full Stack Developer | UX/UI Designer | Musician </h3>
 
           <p>
             Creative professional with expertise in digital marketing, web development, telecommunications, media, and music. Leverages these skills to deliver impactful content, campaigns, and experiences that drive brand awareness.
