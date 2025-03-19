@@ -1,43 +1,42 @@
 #resume {
-    padding: 40px 20px;
-    background-color: #f8f9fa;
-    text-align: center;
-  }
-  
-  #resume h2 {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 40px;
-  }
-  
-  .resume-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-    justify-content: center;
-  }
-  
-  .resume-section {
-    flex: 1;
-    max-width: 500px;
-    padding: 30px;
-    background-color: #f0faff;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px #00559580;
-    margin-top: 20px;
-  }
-  
-  .resume-section h3 {
-    text-align: left;
-    font-size: 1.5rem;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  .resume-section p {
-    font-size: 1.1rem;
-    color: #555;
-    line-height: 1.6;
-    text-align: left;
-  }
-  
+  padding: 40px 20px; /* Add padding around the resume section */
+  background-color: #f8f9fa; /* Light background color for the section */
+  text-align: center; /* Center the text in the section */
+}
+
+#resume h2 {
+  font-size: 2.5rem; /* Set the font size for the heading */
+  color: #333; /* Dark color for the heading text */
+  margin-bottom: 40px; /* Add space below the heading */
+}
+
+.resume-container {
+  display: flex; /* Use flexbox layout for the container */
+  flex-wrap: wrap; /* Allow wrapping of items when necessary */
+  gap: 40px; /* Space between sections */
+  justify-content: center; /* Center the sections horizontally */
+}
+
+.resume-section {
+  flex: 1; /* Allow sections to grow and fill space equally */
+  max-width: 500px; /* Limit the maximum width of each section */
+  padding: 30px; /* Add padding inside each section */
+  background-color: #f0faff; /* Light blue background for each section */
+  border-radius: 8px; /* Rounded corners for each section */
+  box-shadow: 0 4px 12px #00559580; /* Subtle shadow to give depth */
+  margin-top: 20px; /* Space at the top of each section */
+}
+
+.resume-section h3 {
+  text-align: left; /* Align the section heading to the left */
+  font-size: 1.5rem; /* Set font size for the subsection heading */
+  color: #333; /* Dark color for the subsection heading */
+  margin-bottom: 20px; /* Add space below the subsection heading */
+}
+
+.resume-section p {
+  font-size: 1.1rem; /* Set the font size for the paragraph text */
+  color: #555; /* Medium gray color for the paragraph text */
+  line-height: 1.6; /* Increase line height for readability */
+  text-align: left; /* Align the paragraph text to the left */
+}

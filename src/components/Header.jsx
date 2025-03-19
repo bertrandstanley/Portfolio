@@ -2,17 +2,38 @@ import { NavLink } from 'react-router-dom';
 
 const Navigation = () => {
   return (
+    // Navigation container
     <nav>
-      <NavLink to="/" end className={({ isActive }) => (isActive ? 'active' : '')}>
+      {/* Navigation link to About Me page */}
+      <NavLink 
+        to="/" 
+        end // The 'end' ensures that this link is only active on the root path ('/')
+        className={({ isActive }) => (isActive ? 'active' : '')} // Adds 'active' class if the link is active
+      >
         About Me
       </NavLink>
-      <NavLink to="/portfolio" className={({ isActive }) => (isActive ? 'active' : '')}>
+
+      {/* Navigation link to Portfolio page */}
+      <NavLink 
+        to="/portfolio" 
+        className={({ isActive }) => (isActive ? 'active' : '')} // Adds 'active' class if the link is active
+      >
         Portfolio
       </NavLink>
-      <NavLink to="/contact" className={({ isActive }) => (isActive ? 'active' : '')}>
+
+      {/* Navigation link to Contact Me page */}
+      <NavLink 
+        to="/contact" 
+        className={({ isActive }) => (isActive ? 'active' : '')} // Adds 'active' class if the link is active
+      >
         Contact Me
       </NavLink>
-      <NavLink to="/resume" className={({ isActive }) => (isActive ? 'active' : '')}>
+
+      {/* Navigation link to Resume page */}
+      <NavLink 
+        to="/resume" 
+        className={({ isActive }) => (isActive ? 'active' : '')} // Adds 'active' class if the link is active
+      >
         Resume
       </NavLink>
     </nav>

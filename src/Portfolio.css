@@ -1,134 +1,134 @@
 #portfolio {
-    padding: 40px 20px;
-    text-align: center;
+    padding: 40px 20px; /* Padding around the portfolio section */
+    text-align: center; /* Center-align the text within the section */
 }
 
 #portfolio h2 {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-    color: #333;
+    font-size: 2.5rem; /* Set the font size for the heading */
+    margin-bottom: 30px; /* Add space below the heading */
+    color: #333; /* Set text color to a dark gray */
 }
 
 .projects {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-    max-width: 1200px;
-    margin: 0 auto;
-    justify-items: center;
-    grid-template-rows: repeat(3, 1fr);
-    z-index: 1; /* Ensure the projects section is stacked properly */
+    display: grid; /* Use grid layout for project cards */
+    grid-template-columns: repeat(2, 1fr); /* Create two columns, each with equal width */
+    gap: 30px; /* Space between grid items */
+    max-width: 1200px; /* Limit max width of the grid */
+    margin: 0 auto; /* Center the grid horizontally */
+    justify-items: center; /* Center the grid items */
+    grid-template-rows: repeat(3, 1fr); /* Create three rows with equal height */
+    z-index: 1; /* Ensure that the projects section is properly stacked */
 }
 
 .project-card {
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-    background-color: white;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    width: 100%;
-    min-height: 200px;
-    z-index: 1;
-    box-sizing: border-box; /* Added for box sizing */
+    position: relative; /* Relative positioning for proper stacking context */
+    overflow: hidden; /* Prevent content from overflowing the card */
+    border-radius: 10px; /* Rounded corners for the project card */
+    background-color: white; /* White background */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow around the card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+    width: 100%; /* Full width of the grid item */
+    min-height: 200px; /* Set a minimum height for each project card */
+    z-index: 1; /* Ensure proper stacking */
+    box-sizing: border-box; /* Include padding and border in the element’s total width and height */
 }
 
 .project-card:hover {
-    transform: scale(1.15);
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
-    z-index: 2;
+    transform: scale(1.15); /* Slight zoom effect on hover */
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15); /* Darker shadow on hover */
+    z-index: 2; /* Ensure it appears above other cards */
 }
 
 .project-card a {
-    text-decoration: none;
-    display: block;
-    height: 100%;
+    text-decoration: none; /* Remove underline from links */
+    display: block; /* Make the link cover the entire card */
+    height: 100%; /* Ensure the link takes up the full height of the card */
 }
 
 .project-image {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+    width: 100%; /* Make the image container take up the full width of the card */
+    height: 100%; /* Make the image container take up the full height of the card */
+    overflow: hidden; /* Hide any overflow of the image */
 }
 
 .project-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-bottom: 5px solid #0077b5;
+    width: 100%; /* Make the image cover the full width */
+    height: 100%; /* Make the image cover the full height */
+    object-fit: cover; /* Ensure the image covers the area while maintaining aspect ratio */
+    border-bottom: 5px solid #0077b5; /* Add a blue border at the bottom */
 }
 
 .project-card:hover .project-image img {
-    opacity: 0.8;
+    opacity: 0.8; /* Make the image slightly transparent on hover */
 }
 
 .project-info {
-    padding: 5px;
-    background-color: #f0faff;
+    padding: 5px; /* Padding around the project info */
+    background-color: #f0faff; /* Light blue background for the project info section */
 }
 
 .project-info h3 {
-    font-size: 1.5rem;
-    color: #333;
-    margin-top: 10px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    font-size: 1.5rem; /* Set the font size for the project title */
+    color: #333; /* Dark gray color for text */
+    margin-top: 10px; /* Add space at the top of the title */
+    font-weight: bold; /* Make the title bold */
+    text-transform: uppercase; /* Convert the title to uppercase */
+    letter-spacing: 1px; /* Add slight letter spacing for the title */
 }
 
 /* Styles for the buttons */
 .buttons {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 15px;
-    z-index: 3; /* Make sure the buttons are above the card image */
-    margin-top: 10px;
+    position: absolute; /* Position the buttons absolutely within the card */
+    bottom: 10px; /* Place them at the bottom of the card */
+    left: 50%; /* Center the buttons horizontally */
+    transform: translateX(-50%); /* Correct the positioning to truly center the buttons */
+    display: flex; /* Use flexbox for the buttons */
+    gap: 15px; /* Space between buttons */
+    z-index: 3; /* Ensure the buttons appear above the card image */
+    margin-top: 10px; /* Add space above the buttons */
 }
 
 .button {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    background-color: #000000; /* Green background by default */
-    border-radius: 50%;
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block; /* Make the button behave like an inline element */
+    width: 40px; /* Set fixed width for the button */
+    height: 40px; /* Set fixed height for the button */
+    background-color: #000000; /* Set the button color to black */
+    border-radius: 50%; /* Make the button circular */
+    overflow: hidden; /* Hide any overflow content within the button */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add subtle shadow around the button */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition on hover */
 }
 
 .button:hover {
-    background-color: #17ae37; /* Darker green when hovered */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    background-color: #17ae37; /* Change background color to green when hovered */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Darker shadow when hovered */
 }
 
 .button img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    transition: opacity 1s ease;
+    width: 100%; /* Make the image inside the button cover the button’s full size */
+    height: 100%; /* Make the image inside the button cover the button’s full size */
+    object-fit: contain; /* Ensure the image maintains its aspect ratio inside the button */
+    transition: opacity 1s ease; /* Smooth opacity transition */
 }
 
 .button:hover img {
-    opacity: 1;
+    opacity: 1; /* Make the image fully visible when hovered */
 }
 
 @media (max-width: 768px) {
     .projects {
-        grid-template-columns: 1fr;
-        gap: 20px;  
+        grid-template-columns: 1fr; /* Switch to a single column layout for smaller screens */
+        gap: 20px; /* Adjust gap between cards */
     }
 
     .project-card {
-        height: 250px;
+        height: 250px; /* Adjust height for smaller screens */
     }
 }
 
 @supports (-webkit-appearance:none) {
-    /* Safari-specific fixes here */
+    /* Safari-specific fixes */
     .project-card {
-        height: 200px; /* adjust for Safari if needed */
+        height: 200px; /* Adjust card height in Safari */
     }
 }
